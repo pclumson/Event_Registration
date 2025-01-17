@@ -6,10 +6,15 @@ import Confirmation from './Confirmation';
 
 const App = () => {
 
+    const [registrationDetails, setRegistrationDetails] = useState(null);
+    const handleConfirm = (details) => {
+    setRegistrationDetails(details);
+  };
+
 
   return (
-    <SafeAreaView style={styles.container}>
-      <RegistrationForm/>
+   <SafeAreaView style={styles.container}>
+      <RegistrationForm onConfirm={handleConfirm}/>
     </SafeAreaView>
   );
 };
