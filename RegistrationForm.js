@@ -39,7 +39,7 @@ const RegistrationForm = ({ onConfirm }) => {
           value={name}
         />
 
-       </View>>
+       </View>
 
        <View testID='formEmail'>
        <Text style={styles.label}>Email</Text>
